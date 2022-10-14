@@ -13,7 +13,7 @@ function App() {
     {
       id:'2',
       title:'Descanso merecido',
-      image:'https://m.media-amazon.com/images/I/61Y-HZ4dPLL._AC_SL1024_.jpg',
+      image:'https://http2.mlstatic.com/D_NQ_NP_2X_775851-MCO50062332424_052022-F.webp',
     },
     {
       id:'3',
@@ -23,40 +23,42 @@ function App() {
   ]
 
 
-function Card (){
+function Card (props){
   return(
-
-  <div className='card'>
-      <div className='card-body'>
-        <div className='col'>
-          <div className='row-6'>
-            <img  src='https://w0.peakpx.com/wallpaper/312/783/HD-wallpaper-person-holding-black-umbrella.jpg' alt=''/>,
-            <button className='card__btn'>SHOP</button>
-          </div>
-          
-          <div className='row-6'>
-            <img src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61PyxsMIxlL._AC_SL1280_.jpg' alt=''/>,
-            <h2 className='card-title'>Pufi RAIN</h2>,
-            <h2 className='card-description'>Descripcion del producto. Este es un texto simulado</h2>
-            <p className='card-ver mas'>VER mas</p>
-
-          </div>
-       </div>
-
+    <div className='wrapper'>
+    <div className='card'>
+      <img  src={props.img} className='card__img' alt=''/>
+      <div className='card__body'>
+        <h2 className='card__title'>{props.title}</h2>
+        <p className='card__description'>{props.description}</p>
+        <h3 className='card__price'>{props.price}</h3>
+        <button className='card__btn'>VIEW MORE</button>
+      </div>
     </div>
-      <button className='card__btn'>View more</button>
+    </div>
 
-  </div>
-  )
 
-}    
+  );
+  }
 
 
   return (
     <div className="App">
       <Header />
       <Slider images={images}/>
-      <Card />
+      <Card 
+        img ="https://media.istockphoto.com/photos/hand-holding-umbrella-picture-id1318116588?k=20&m=1318116588&s=612x612&w=0&h=KQhjJerKWecFiuzdk4oYiMorVF2AX7gzsFs0IDf5olA="
+        title = "Umbrella"
+        description="All"
+        price ="30.00"
+      />
+
+      <Card 
+        img ="https://images.pexels.com/photos/5421530/pexels-photo-5421530.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        title = "Umbrella black"
+        description="All"
+        price ="50.00"
+      />
     </div>
   );
 }
