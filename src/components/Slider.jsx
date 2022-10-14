@@ -2,6 +2,7 @@ import React from 'react'
 import Slider from 'infinite-react-carousel'
 
 import './Slider.css'
+import './Slider.css'
 
 const Carousel = ({ images }) => {
 	return (
