@@ -1,32 +1,20 @@
-import React from "react";
-import { Navbar } from '../../common';
+import './Header.css'
+import Navbar from '../navbar/Navbar'
 
-import './Header.css';
 
-function Header (){
-    return(
-        <section className="header">
-          <section className="header-top">
-            <section className="header-top__logo">
-              <a href="/" className="header-logo">LOGO</a> 
-            </section>
-              <section className="header-top__navbar">
-                <section className="header-top__navigation">
-                  <Navbar />
-                </section>
-                <hr className="header-top__separator"/>
-              </section>
-          </section>
-          <section className="header-bottom">
-            <section className="header-bottom__phone">
-              000000122121
-            </section>
-            <section className="header-bottom__email">
-              lex.info@gmail.com
-            </section>   
-          </section>
-      </section>
-    )
+function Header() {
+  return (
+    <header className='App-header'>
+    <Navbar />
+    <h2 className='banner-text'>
+      ESTAR COMODO, <br></br> NUNCA FUE TAN FACIL.
+    </h2>
+    <div className='shop-btn'>
+      <button>SHOP</button>
+    </div>
+
+    </header>
+  );
 }
 
 export default Header;

@@ -1,93 +1,35 @@
-.header {
-    margin-top: 20px;
-    display: flex;
-    flex: 1;
+header{
+    background-image: src="https://images.pexels.com/photos/2749939/pexels-photo-2749939.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 15px 90px rosybrown;
+
+}
+
+.App-header{
+    min-height: 100vh;
+    color:bisque;
+    font-size: calc(10px + 2vmin);
     flex-direction: column;
-  }
-  
-  .header-top {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
-    height: 80px;
-  }
-  
-  .header-top__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-  }
-  
-  .header-logo {
-    color: inherit;
-    text-decoration: inherit;
-    font-family: RobotoThin;
-    font-size:50px;
-  }
-  
-  .header-top__navbar {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-  }
-  
-  .header-top__seperator {
-    width: 100%;
-    border: none;
-    height: 2px;
-    margin-top: 2px;
-    background-color: black;
-  }
-  
-  .header-top__navigation {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 55px;
-  }
-  
-  .header-bottom {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 6px;
-  }
-  
-  .header-bottom__email {
-    margin-right: 55px;
-  }
-  
-  .header-bottom__phone {
-    margin-right: 65px;
-  }
-  
-  .header-bottom__bag {
-    position: absolute;
-    display: flex;
-  }
-  
-  .header-bottom__bag-icon {
-    position: relative;
-    display: flex;
-    left: -5px;
-    width: 30px;
-    height: 30px; 
-  }
-  
-  .header-bottom__bag-count {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: RobotoRegular;
-    right: 0px;
-    top: -5px;
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    border-radius: 10px;
-    color: white;
-  }
-  
+
+}
+
+shop-btn{
+    padding: 10px 40px;
+    opacity: 15px;
+    background-color: transparent;
+    color:antiquewhite;
+    border: solid 1px;
+    border-color: aliceblue;
+    
+}
+
+.anuncio{
+    text-align: center;
+    font-size: 30px;
+}
